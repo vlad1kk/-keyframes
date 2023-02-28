@@ -80,11 +80,38 @@ body{
 }
 .content {
 }
-.content__circle {
+.content__circle-green {
   width: 100px;
   height: 100px;
-  background-color: #000;
+  background-color: green;
   border-radius: 50%;
   position: relative;
   left: 0;
+
+  animation-name: green-circle;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-fill-mode: forwards;
+
+  /* animation: black-circle 3s cubic-bezier(0.68,-0.55,0.265,1.55) 0s 3 alternate forwards; */
+
+}
+/* @keyframes black-circle{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: 500px;
+  }
+} */
+@keyframes green-circle{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 300px;
+  }
 }
